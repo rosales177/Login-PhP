@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+    background: url(../image/Fondo_Body.jpg);
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+}
+.contenedor-login{
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-image: url(../image/fondo-login.jpg);
+    background-size: cover;
+    height: 500px;
+    border: 1px solid rgba(255, 255, 255, .9);
+    border-radius: 10px;
+    
+}
+.contenedor-login > h1{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    letter-spacing: 1px;
+}
+.image{
+    width: 70px;
+    margin-left: 10%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.info-login{
+    background-color: rgba(255, 255, 255, .3);
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: 1px solid rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    position: relative;   
+}
+.form-login{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    width: 80%;
+    height: 30px;
+    border:none;
+    overflow: hidden;
+}
+.input:hover{
+    background-color:rgb(65, 105, 225);
+    border: 1px solid silver;
+}
+.input:focus{
+    border: 1px solid red;
+}
+.form-login > label{
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.form-login > button{
+    width: 83%;
+    height: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(241, 80, 6);
+    border: none;
+    overflow: hidden;
+}
+.form-login > p{
+    margin-top: 0;
+    padding-top: 3px;
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+span{
+    color: rgb(241, 80, 6)  ;
+}
