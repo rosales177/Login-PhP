@@ -58,9 +58,9 @@ body{
 }
 .message-error > p{
   text-align: center;
-  font-size: 7pt;
+  font-size: 9pt;
   padding: 5px 0 5px 0px;
-  color: red;
+  font-weight: 1000;
 }
 /* Formulaio*/
 .form-login{
