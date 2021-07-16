@@ -11,7 +11,10 @@ $(function(){
 
     console.log(DatosPost);
     /*Modificar el Url antes de ejecutar*/
-    let url = "/Login/php/controlador.php";
+    //[Url Remota]
+    //let url = "/Login/php/controlador.php";
+    //[Url Local]
+    let url = "/login-php/php/controlador.php";
 
     $.post(url, DatosPost, function(response){
         console.log(response);
