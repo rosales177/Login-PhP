@@ -10,8 +10,14 @@
 <body>
     <div class="contenedor-login">
         <h1>Login</h1>
-        <img src="image/foto-perfil.jpg" class="image" alt="">
+        <div class="contenedor-img">
+           <img src="image/foto-perfil.jpg" class="image" alt="">
+        </div>
+       
         <div class="info-login">
+            <div class="message-error" id="error">
+              <p>El usuario y contraseña no coinciden.</p>
+            </div>
             <form class="form-login">
                 <label>UserName</label>
                 <input class="input" type="text" name="user" placeholder="UserName" required>
@@ -24,4 +30,6 @@
     </div>
     
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 </html>
