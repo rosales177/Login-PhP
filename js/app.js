@@ -12,24 +12,24 @@ $(function(){
     console.log(DatosPost);
     /*Modificar el Url antes de ejecutar*/
     //[Url Remota]
-    /*let url = "/Login/php/controlador.php";*/
+    let url = "/Login/php/controlador.php";
     //[Url Local]
-    let url = "/login-php/php/controlador.php";
+    /*let url = "/login-php/php/controlador.php";*/
 
     $.post(url, DatosPost, function(response){
         console.log(response);
         if(response == "Incorrecto"){
           $("#error").show();
           $("#formulario").css({'margin-top' : '0px'});
-        }
+        }else{
+          $(location).attr("href","/Login/pages/Home.html" )
+        } 
         $("#formulario").trigger("reset");
     });
     e.preventDefault();
   });
   
   
-  $('#Home').click(function (e){
-      $("#home-contenido").load('Contenido-home.html div');
-  });
+  
 
 })
